@@ -1,0 +1,30 @@
+###
+POST http://localhost:10000/tasks
+Content-Type: application/json
+
+{
+  "title": "Express",
+  "description": "Express를 활용"
+}
+
+###
+GET http://localhost:10000/tasks
+
+###
+GET https://todo-api-7oiv.onrender.com/tasks/67ab0f078fdf23e273d8e794
+
+###
+GET https://todo-api-7oiv.onrender.com/tasks/67ab0f078fdf23e273d8e79
+
+###
+PATCH https://todo-api-7oiv.onrender.com/tasks/
+Content-Type: application/json
+
+{
+  "title": "Express update",
+  "description": "Express를 활용"
+}
+
+###
+DELETE  https://todo-api-7oiv.onrender.com/tasks/
+Content-Type: application/json
