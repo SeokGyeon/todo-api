@@ -33,6 +33,14 @@ function asyncHandler(handler) {
   };
 }
 
+app.get(
+  "/",
+  asyncHandler(async (req, res) => {
+    console.log(req.headers);
+    res.status(200).send("Hello World");
+  })
+);
+
 app.post(
   "/tasks",
   asyncHandler(async (req, res) => {
